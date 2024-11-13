@@ -1,0 +1,6 @@
+version: '3'
+
+vars:
+  APP_NAME: example_app
+includes:
+  init: taskfiles/init.yml

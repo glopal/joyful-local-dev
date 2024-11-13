@@ -1,0 +1,30 @@
+version: '3'
+
+tasks:
+  dev:
+    vars:
+      ENV: |-
+        username=admin
+        password=pass123
+        host=mydatabase.abc.com
+    cmds:
+      - echo -n '{{.ENV}}' > .env
+
+  stg:
+    cmds:
+      - task: not_supported
+        vars:
+          env: stg
+
+  prd:
+    cmds:
+      - task: not_supported
+        vars:
+          env: prd
+
+  not_supported:
+    internal: true
+    silent: true
+    cmds:
+      - echo "Not supported. Search for '{{.APP_NAME}} {{.env}}' in 1Password"
+      - exit 1
