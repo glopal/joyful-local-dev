@@ -1,4 +1,5 @@
 # Joyful Local Dev (RRC Inspire 2024)
+[Online Presentation Slides](https://glopal.github.io/joyful-local-dev)
 
 ## Contact
 **Mike Menzies**
